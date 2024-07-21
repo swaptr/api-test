@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "aifaq-test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "conversation",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "0.0.0.0:8000/conversation",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"length\": 50,\n  \"text\": \"This is a message typed by the user on the UI.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}
