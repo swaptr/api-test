@@ -1,12 +1,7 @@
-from pydantic import BaseModel, ConfigDict
-
+from pydantic import BaseModel
 
 class ConversationRequest(BaseModel):
-    length: int
-    text: str
-
-    model_config = ConfigDict(use_enum_values=True)
-
+    question: str
 
 class ConversationResponse(BaseModel):
-    response: str
+    answer: str
